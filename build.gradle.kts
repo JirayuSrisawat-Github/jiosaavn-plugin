@@ -22,6 +22,8 @@ allprojects {
         mavenLocal()
         maven("https://maven.lavalink.dev/releases")
         maven("https://maven.lavalink.dev/snapshots")
+        maven("https://maven.jirayu.net/snapshots")
+        maven("https://maven.jirayu.net/snapshots")
         maven("https://jitpack.io")
     }
 

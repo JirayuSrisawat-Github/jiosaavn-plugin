@@ -66,9 +66,9 @@ publishing {
     repositories {
         maven {
             url = if (preRelease) {
-                uri("https://maven.lavalink.dev/snapshots")
+                uri("https://maven.jirayu.net/snapshots")
             } else {
-                uri("https://maven.lavalink.dev/releases")
+                uri("https://maven.jirayu.net/releases")
             }
             credentials {
                 username = System.getenv("USERNAME")
@@ -99,7 +99,7 @@ githubRelease {
             |lavalink:
             |    plugins:
             |        - dependency: "com.github.appujet:jiosaavn-plugin:$verName"
-            |          repository: https://jitpack.io
+            |          repository: https://maven.jirayu.net/snapshots
             |```
         """.trimMargin())
     } else {
